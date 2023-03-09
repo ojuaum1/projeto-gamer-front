@@ -1,0 +1,24 @@
+/* import da fontes */
+@font-face {
+    font-family:TitilliumWeb-Black;
+    src: url(../assets/fontes/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* mobile first */
+h1{
+    font-family:TitilliumWeb-Black;
+}
+header .header-top .phone{
+    
+}
+
+
+
+header{
+    background-color: grey;
+}
