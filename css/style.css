@@ -1,24 +1,67 @@
-/* import da fontes */
+/* imports das fontes */
 @font-face {
-    font-family:TitilliumWeb-Black;
-    src: url(../assets/fontes/Titillium_Web/TitilliumWeb-Black.ttf);
+    font-family: TitilliumWeb-Black;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
 }
-/* reset */
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* mobile first */
-h1{
-    font-family:TitilliumWeb-Black;
-}
-header .header-top .phone{
-    
+
+body {
+    background-color: #1B1426;
+    color: #ffffff;
 }
 
+/* Classes genéricas */
+.layout-grid {
+    border: 1px solid salmon;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* justify content + align items */
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mobile First */
+
+/* HEADER */
+header {
+    height: 60px;
+    background-color: #1B1426;
+}
+
+/* Header Top */
+header .header-top {
+    display: none;
+}
+
+/* Header Bottom */
 
 
-header{
-    background-color: grey;
+header .header-bottom {
+    height: 100%;
+}
+
+header .header-bottom img.logo {
+    width: 86px;
+}
+
+header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 80vw;
+    height: calc(100vh);
+}
+
+header .header-bottom .menu-usuarios{
+    display: none;
 }
