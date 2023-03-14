@@ -17,21 +17,21 @@
             <div class="layout-grid">
                 <div class="contatos">
                     <div class="phone">
-                        <img src="assets/icones/telefone.svg" alt="Ícone de telefone">
+                        <img src="./assets/icones/telefone.svg" alt="Ícone de telefone">
                         <span>(11) 0900-1010</span>
                     </div>
                     <div class="email">
-                        <img src="assets/icones/email.svg" alt="Ícone de e-mail">
+                        <img src="./assets/icones/email.svg" alt="Ícone de e-mail">
                         <span>contato@gamer.com.br</span>
                     </div>
                 </div>
 
                 <div class="midias-sociais">
                     <a href="">
-                        <img src="assets/icones/facebook.svg" alt="Imagem link do Facebook da empresa Gamer">
+                        <img src="./assets/icones/facebook.svg" alt="Imagem link do Facebook da empresa Gamer">
                     </a>
                     <a href="">
-                        <img src="./assets/icones/linkedin.svg" alt="Imagem link do Linkedin da empresa Gamer">
+                        <img src="assets/icones/linkedin.svg" alt="Imagem link do Linkedin da empresa Gamer">
                     </a>
                     <a href="">
                         <img src="./assets/icones/instagram.svg" alt="Imagem link do Instagram da empresa Gamer">
@@ -43,13 +43,13 @@
         <div class="header-bottom">
             <div class="layout-grid alinhamento-between-center">
                 <!-- menu hamburger -->
-                <img src="./assets/icones/3barras.svg" class="menu-hamburger"
+                <img onclick="mostrarMenu()" src="./assets/icones/3barras.svg" class="menu-hamburger"
                     alt="Ícone para abrir e fechar o menu de celular">
 
                 <img class="logo" src="./assets/imagens/logotipo-gamer.svg"
                     alt="Logotipo da empresa. Texto Gamer com um joystick ao centro">
 
-                <nav class="menu">
+                <nav class="menu" id="menu">
                     <a href="">Início</a>
                     <a href="">Jogadores</a>
                     <a href="">Equipes</a>
@@ -57,14 +57,15 @@
 
                     <!-- visível apenas no mobile -->
 
-                    <div class="phone">
-                        <img src="./assets/icones/telefone.svg" alt="Ícone de telefone">
+                    <a class="phone">
+                        <img src="./assets/icones/telefone.svg"
+                            alt="Ícone de Telefone. Abre e fecha o menu principal, no celular">
                         <span>(11) 0900-1010</span>
-                    </div>
-                    <div class="email">
+                    </a>
+                    <a class="email">
                         <img src="./assets/icones/email.svg" alt="Ícone de e-mail">
                         <span>contato@gamer.com.br</span>
-                    </div>
+                    </a>
 
                     <div class="midias-sociais">
                         <a href="">
@@ -80,10 +81,12 @@
                 </nav>
 
                 <!-- menu 3 pontinhos -->
-                <img src="./assets/icones/3 pontos.svg" class="menu-pontinhos"
-                    alt="Ícone 3 pontinhos, abre o menu de usuários">
 
-                <div class="menu-usuarios">
+
+                <img onclick="mostrarUsuarios()" src="./assets/icones/3 pontos.svg" class="menu-pontinhos"
+                    alt="Ícone para abrir e fechar o menu de celular usuario">
+
+                <div class="menu-usuarios" id="menu-usuarios">
                     <a href="">
                         <img src="./assets/icones/usuario.svg" alt="Ícone de perfil">
                     </a>
@@ -96,9 +99,27 @@
                 </div>
             </div>
         </div>
-
     </header>
 
+
+    <main>
+        <section class="banner">
+            <h1>liga gamers</h1>
+            <button class="botao sobre"></button>
+        </section>
+    </main>
+    
+    <script>
+        function mostrarMenu() {
+            document.getElementById("menu").classList.toggle("mostrar-menu");
+        }
+    </script>
+
+    <script>
+        function mostrarUsuarios() {
+            document.getElementById("menu-usuarios").classList.toggle("mostrar-usuarios");
+        }
+    </script>
 </body>
 
 </html>
