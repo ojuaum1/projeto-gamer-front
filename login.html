@@ -52,7 +52,7 @@
                     alt="Logotipo da empresa. Texto Gamer com um joystick ao centro">
 
                 <nav class="menu" id="menu">
-                    <a href="">Início</a>
+                    <a href="../projeto-gamer-manha/index.html">Início</a>
                     <a href="">Jogadores</a>
                     <a href="">Equipes</a>
                     <a href="">Notícias</a>
@@ -102,39 +102,42 @@
     </header>
 
 
-    <main>
-        <section class="alinhamento-between-center login">
-           <form action="" class="logar">
+    <!-- FORMULÁRIO DE LOGIN -->
+    <main class="fundo-login">
+        <div class="bkg-login">
+            <form class="frm-login">
+                <div class="login-title">
 
-            <div class="linha">
-                <img src="./assets/icons/user.svg" alt="">
-                <input type="email" placeholder="Login">
-            </div>
-            <div class="linha">
-                <img src="./assets/icons/Vector.svg" alt="">
-                <input type="password" placeholder="senha">
-            </div>
-        </form> 
+                    <h1>Login</h1>
+                </div>
+                <div class="frm-linha">
+                    <div class="bkg-input">
+                        <img src="./assets/icons/user.svg" alt="ícone de usuário">
+                        <input type="email" id="email" placeholder="Digite seu e-mail:">
+                    </div>
+                </div>
+                <div class="frm-linha">
+                    <div class="bkg-input">
+                        <img src="./assets/icons/Vector -chave.svg" alt="ícone de chave">
+                        <input type="password" id="password" placeholder="Digite sua senha:">
+                    </div>
+                </div>
 
-        <section class="banner">
-            <a href="" class="botao-sobre">Sobre</a>
-        </section>
-
-        </section>
-        
-       
-        
-   
+                <button class="btn-logar">Logar</button>
+            </form>
+        </div>
 
     </main>
 
     <footer>
         <div class="layout-grid footer-top">
-            
+
             <div id="sobre">
-                <img src="./assets/images/logotipo-gamer.svg" alt="Logotipo, imagem com texto gamer e um controle de vídeo game ao centro">
-                
-                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e altamente comprometida.</p>
+                <img src="./assets/images/logotipo-gamer.svg"
+                    alt="Logotipo, imagem com texto gamer e um controle de vídeo game ao centro">
+
+                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e
+                    altamente comprometida.</p>
 
                 <!-- exportar as imagens do figma! -->
                 <div id="midias-sociais-footer">
@@ -211,9 +214,9 @@
                     <button>Enviar</button>
                 </form>
             </div>
-            
+
         </div> <!-- fim da footer-top -->
-        
+
 
         <div class="layout-grid footer-bottom">
             <p id="rights">&copy;Todos os diretos reservados</p>
@@ -237,5 +240,3 @@
 </body>
 
 </html>
-
-
